@@ -1,0 +1,44 @@
+.friend-list-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .friend-list-item:hover {
+    background-color: #e9ecef;
+  }
+  
+  .friend-list-item.selected {
+    background-color: #d1e7fd;
+  }
+  
+  .friend-profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+  }
+  
+  .friend-info {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .friend-name {
+    font-weight: bold;
+    font-size: 0.95em;
+    color: #333;
+  }
+  
+  .friend-last-message {
+    font-size: 0.8em;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
